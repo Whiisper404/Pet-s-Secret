@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Pet's Secret</title>
+    <meta name="description" content="Интернет-магазин товаров для домашних животных Pet's Secret в Астрахани. Шлейки, лежанки, миски, автокресла, одежда для собак и кошек. Доставка по Астрахани и области.">
+    <meta name="keywords" content="товары для животных Астрахань, зоотовары Астрахань, шлейка для собаки, лежанка для кошки, автокресло для собак, миски на подставке">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Pet's Secret Logo" class="logo">
+            </div>
+            <h1>Pet's Secret</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="profile.html">Личный кабинет</a></li>
+            <li><a href="login.html" class="active">Вход</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="auth-container">
+            <form class="auth-form" id="loginForm">
+                <h2>Вход в аккаунт</h2>
+                
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <div class="form-error" id="loginEmailError"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Пароль:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <div class="form-error" id="loginPasswordError"></div>
+                </div>
+                
+                <button type="submit" class="auth-btn">Войти</button>
+                
+                <div class="auth-links">
+                    <p>Нет аккаунта? <a href="register.html">Зарегистрируйтесь</a></p>
+                    <p><a href="#">Забыли пароль?</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Интернет-магазин Pet's Secret</p>
+    </footer>
+
+    <script src="auth-script.js"></script>
+</body>
+</html>

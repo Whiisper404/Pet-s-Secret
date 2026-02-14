@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Pet's Secret</title>
+    <meta name="description" content="Интернет-магазин товаров для домашних животных Pet's Secret в Астрахани. Шлейки, лежанки, миски, автокресла, одежда для собак и кошек. Доставка по Астрахани и области.">
+    <meta name="keywords" content="товары для животных Астрахань, зоотовары Астрахань, шлейка для собаки, лежанка для кошки, автокресло для собак, миски на подставке">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Pet's Secret Logo" class="logo">
+            </div>
+            <h1>Pet's Secret</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="profile.html" class="active">Личный кабинет</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h2>Иван Иванов</h2>
+                <p>Участник с января 2025</p>
+            </div>
+
+            <div class="profile-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-user-circle"></i> Личная информация</h3>
+                    <p><strong>Имя:</strong> Иван</p>
+                    <p><strong>Фамилия:</strong> Иванов</p>
+                    <p><strong>Email:</strong> ivanov@example.com</p>
+                    <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Адрес доставки</h3>
+                    <p><strong>Город:</strong> Астрахань</p>
+                    <p><strong>Адрес:</strong> ул. Кирова</p>
+                    <p><strong>Индекс:</strong> 123456</p>
+                </div>
+            </div>
+
+            <div class="order-history">
+                <h3><i class="fas fa-history"></i> История заказов</h3>
+                
+                <div class="order-item">
+                    <div class="order-details">
+                        <h4>Заказ #001</h4>
+                        <p><strong>Дата:</strong> 15.01.2025</p>
+                        <p><strong>Статус:</strong> <span style="color: #4CAF50;">Доставлен</span></p>
+                        <p><strong>Сумма:</strong> 25 980 ₽</p>
+                    </div>
+                    <div class="order-actions">
+                        <button class="details-btn">Повторить заказ</button>
+                        <button class="details-btn">Подробнее</button>
+                    </div>
+                </div>
+
+                <div class="order-item">
+                    <div class="order-details">
+                        <h4>Заказ #002</h4>
+                        <p><strong>Дата:</strong> 10.01.2025</p>
+                        <p><strong>Статус:</strong> <span style="color: #FF9800;">В обработке</span></p>
+                        <p><strong>Сумма:</strong> 18 490 ₽</p>
+                    </div>
+                    <div class="order-actions">
+                        <button class="details-btn">Отследить</button>
+                        <button class="details-btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="logout-btn">Выйти из аккаунта</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Интернет-магазин Pet's Secret</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров - Pet's Secret</title>
+    <meta name="description" content="Интернет-магазин товаров для домашних животных Pet's Secret в Астрахани. Шлейки, лежанки, миски, автокресла, одежда для собак и кошек. Доставка по Астрахани и области.">
+    <meta name="keywords" content="товары для животных Астрахань, зоотовары Астрахань, шлейка для собаки, лежанка для кошки, автокресло для собак, миски на подставке">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Pet's Secret Logo" class="logo">
+            </div>
+            <h1>Pet's Secret</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html" class="active">Каталог</a></li>
+            <li><a href="profile.html">Личный кабинет</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="section-title">Каталог товаров</h2>
+        
+        <div class="categories-filter">
+            <button class="filter-btn active" data-category="all">Все товары</button>
+            <button class="filter-btn" data-category="bags">Сумки для перелетов</button>
+            <button class="filter-btn" data-category="beds">Лежанки</button>
+            <button class="filter-btn" data-category="bowls">Миски</button>
+            <button class="filter-btn" data-category="equipment">Амуниция</button>
+            <button class="filter-btn" data-category="clothing">Одежда</button>
+            <button class="filter-btn" data-category="armchair">Автокресла</button>
+            <button class="filter-btn" data-category="other">Иные товары</button>
+        </div>
+
+        <div class="catalog-container">
+            <div class="catalog-card" data-category="bags">
+                <div class="card-image">
+                    <img src="img/13.png" alt="Сумка для перелетов">
+                </div>
+                <div class="card-content">
+                    <h3>Сумка для перелетов</h3>
+                    <p>Комфортная переноска для авиаперелетов</p>
+                    <p class="price">8 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Сумка для перелетов', 8990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-category="beds">
+                <div class="card-image">
+                    <img src="img/9.png" alt="Лежанки">
+                </div>
+                <div class="card-content">
+                    <h3>Лежанки</h3>
+                    <p>Уютная лежанка для комфортного отдыха</p>
+                    <p class="price">12 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Лежанки', 12990)">Добавить в корзину</button>
+                </div>
+            </div> 
+
+            <div class="catalog-card" data-category="bowls">
+                <div class="card-image">
+                    <img src="img/10.png" alt="Миски на подставке">
+                </div>
+                <div class="card-content">
+                    <h3>Миски на подставке</h3>
+                    <p>Эргономичные миски для комфортного питания</p>
+                    <p class="price">11 690р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Миски на подставке', 11690)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-category="equipment">
+                <div class="card-image">
+                    <img src="img/8.png" alt="Амуниция">
+                </div>
+                <div class="card-content">
+                    <h3>Амуниция</h3>
+                    <p>Эргономичная шлейка для прогулок</p>
+                    <p class="price">7 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Амуниция', 7990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-category="clothing">
+                <div class="card-image">
+                    <img src="img/12.png" alt="Одежда">
+                </div>
+                <div class="card-content">
+                    <h3>Одежда</h3>
+                    <p>Модная одежда для вашего питомца</p>
+                    <p class="price">5 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Одежда', 5990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-category="armchair">
+                <div class="card-image">
+                    <img src="img/11.png" alt="Автокресла">
+                </div>
+                <div class="card-content">
+                    <h3>Автокресла</h3>
+                    <p>Безопасность в поездке</p>
+                    <p class="price">11 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Автокресла', 11990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card" data-category="other">
+                <div class="card-image">
+                    <img src="img/14.png" alt="Иные товары">
+                </div>
+                <div class="card-content">
+                    <h3>Иные товары</h3>
+                    <p>Товары для ваших питомцев</p>
+                    <p class="price">3 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Иные товары', 3990)">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart" class="cart-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">
+            <i class="fas fa-times"></i>
+        </a>
+        <h2 class="section-title">Корзина</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Общая сумма: 0 Р</p>
+        <button id="clear-cart">Очистить корзину</button>
+    </div>
+
+    <div id="open-cart-button" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Интернет-магазин Pet's Secret</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="catalog-script.js"></script>
+</body>
+</html>

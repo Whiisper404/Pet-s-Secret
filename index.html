@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet's Secret</title>
+    <meta name="description" content="Интернет-магазин товаров для домашних животных Pet's Secret в Астрахани. Шлейки, лежанки, миски, автокресла, одежда для собак и кошек. Доставка по Астрахани и области.">
+    <meta name="keywords" content="товары для животных Астрахань, зоотовары Астрахань, шлейка для собаки, лежанка для кошки, автокресло для собак, миски на подставке">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Pet's Secret Logo" class="logo">
+            </div>
+            <h1>Pet's Secret</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="profile.html">Личный кабинет</a></li>
+            <li><a href="login.html">Вход</a></li>
+            <li><a href="register.html">Регистрация</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="section-title">Наши товары</h2>
+        <div class="catalog-container">
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/1.png" alt="Шлейка MONO">
+                </div>
+                <div class="card-content">
+                    <h3>Шлейка MONO</h3>
+                    <p>7 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Шлейка MONO', 7990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/2.png" alt="Ошейник MONO">
+                </div>
+                <div class="card-content">
+                    <h3>Ошейник MONO</h3>
+                    <p>4 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Ошейник MONO', 4990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/3.png" alt="Поводок MONO">
+                </div>
+                <div class="card-content">
+                    <h3>Поводок MONO</h3>
+                    <p>6 490р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Поводок MONO', 6490)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/4.png" alt="Автокресло FOR PETS">
+                </div>
+                <div class="card-content">
+                    <h3>Автокресло FOR PETS</h3>
+                    <p>11 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Автокресло FOR PETS', 11990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/5.png" alt="Автокресло FOR PETSS">
+                </div>
+                <div class="card-content">
+                    <h3>Автокресло FOR PETSS</h3>
+                    <p>11 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Автокресло FOR PETSS', 11990)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/6.png" alt="Миски на подставке FOR PETS">
+                </div>
+                <div class="card-content">
+                    <h3>Миски на подставке FOR PETS</h3>
+                    <p>11 690р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Миски на подставке FOR PETS', 11690)">Добавить в корзину</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="card-image">
+                    <img src="img/7.png" alt="Лежанка Esckimo FOR PETS">
+                </div>
+                <div class="card-content">
+                    <h3>Лежанка Esckimo FOR PETS</h3>
+                    <p>15 990р.</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Лежанка Esckimo FOR PETS', 15990)">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart" class="cart-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">
+            <i class="fas fa-times"></i>
+        </a>
+        <h2 class="section-title">Корзина</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Общая сумма: 0 Р</p>
+        <button id="clear-cart">Очистить корзину</button>
+    </div>
+
+    <div id="open-cart-button" onclick="openCart()">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Интернет-магазин Pet's Secret</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
